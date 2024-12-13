@@ -10,7 +10,9 @@ const namaKedua =prompt("Massukkan nama pasangan kamu : ");
 const loveScore = Math.floor(Math.random() * 100) + 1;
 if (loveScore > 70) {
     console.log(`Love Score ${namaPertama} dengan ${namaKedua} : ${loveScore}%. Kalian sangat cocok!`);
+} else if (loveScore > 40 && loveScore <= 70) {
+    console.log(`Love Score ${namaPertama} dengan ${namaKedua} : ${loveScore}%. Masih ada harapan! Semangatlah!!`);
 } else {
-    console.log(`Love Score ${namaPertama} dengan ${namaKedua} : ${loveScore}%. Kalian tidak cocok! Semangatlah!!`);
-};
+    console.log(`Love Score ${namaPertama} dengan ${namaKedua} : ${loveScore}%. Kalian tidak cocok! bagaikan air dan minyak`)
+}
 // console.log(`Love Score ${namaPertama} dengan ${namaKedua} adalah : ${loveScore}%`);
