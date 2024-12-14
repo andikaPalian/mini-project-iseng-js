@@ -13,19 +13,20 @@ for (let i = 0; i <= 100; i++) {
 
 // Dengan menggunakan array 
 function fizzBuzz() {
-    const number = 15;
+    let number = 1;
     let array = [];
-
-    for (let i = 0; i <= number; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
+// Menggunakan while loop
+    while (number <= 100) {
+        if (number % 3 === 0 && number % 5 === 0) {
             array.push("fizzbuzz");
-        } else if (i % 3 === 0) {
+        } else if (number % 3 === 0) {
             array.push("fizz");
-        } else if (i % 5 === 0) {
+        } else if (number % 5 === 0) {
             array.push("buzz");
         } else {
-            array.push(i);
+            array.push(number);
         };
+        number++;
     };
     console.log(array);
 };
